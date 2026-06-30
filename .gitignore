@@ -1,0 +1,9 @@
+# 업스트림 원본 클론 캐시 (지식 소스) — 깃에 안 올림, sync가 매번 새로 받음
+sources/cache/
+
+# 매 sync 마다 새로 생성되는 임시 리포트
+SYNC-REPORT.md
+
+# OS / 에디터 잡파일
+.DS_Store
+*.swp

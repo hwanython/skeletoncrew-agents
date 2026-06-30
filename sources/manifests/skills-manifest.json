@@ -1,0 +1,775 @@
+{
+  "skillCount": 146,
+  "pluginCount": 9,
+  "catalogHash": "75039e1a43b24a22",
+  "skills": [
+    {
+      "name": "ab-test-analysis",
+      "description": "Analyze A/B test results with statistical significance, sample size validation, confidence intervals, and ship/extend/stop recommendations. Use when evaluating experiment results, checking if a test reached significance, interpreting split test data, or deciding whether to ship a variant.",
+      "source": "plugin"
+    },
+    {
+      "name": "access",
+      "description": "Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Discord channel.",
+      "source": "plugin"
+    },
+    {
+      "name": "agent-development",
+      "description": "This skill should be used when the user asks to \"create an agent\", \"add an agent\", \"write a subagent\", \"agent frontmatter\", \"when to use description\", \"agent examples\", \"agent tools\", \"agent colors\", \"autonomous agent\", or needs guidance on agent structure, system prompts, triggering conditions, or agent development best practices for Claude Code plugins.",
+      "source": "plugin"
+    },
+    {
+      "name": "analyze-feature-requests",
+      "description": "Analyze and prioritize a list of feature requests by theme, strategic alignment, impact, effort, and risk. Use when reviewing customer feature requests, triaging a backlog, or making prioritization decisions.",
+      "source": "plugin"
+    },
+    {
+      "name": "ansoff-matrix",
+      "description": "Generate an Ansoff Matrix analysis mapping growth strategies across market penetration, market development, product development, and diversification. Use when considering growth options, planning market expansion, or evaluating strategic growth paths.",
+      "source": "plugin"
+    },
+    {
+      "name": "autoplan",
+      "description": "Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "beachhead-segment",
+      "description": "Identify the first beachhead market segment for a product launch. Evaluates segments against burning pain, willingness to pay, winnable market share, and referral potential. Use when choosing a first market, targeting an initial customer segment, or planning market entry strategy.",
+      "source": "plugin"
+    },
+    {
+      "name": "benchmark",
+      "description": "Performance regression detection using the browse daemon. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "benchmark-models",
+      "description": "Cross-model benchmark for gstack skills. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "brainstorm-experiments-existing",
+      "description": "Design experiments to test assumptions for an existing product — prototypes, A/B tests, spikes, and other low-effort validation methods. Use when validating assumptions, testing feature ideas cheaply, or planning product experiments.",
+      "source": "plugin"
+    },
+    {
+      "name": "brainstorm-experiments-new",
+      "description": "Design lean startup experiments (pretotypes) for a new product. Creates XYZ hypotheses and suggests low-effort validation methods like landing pages, explainer videos, and pre-orders. Use when validating a new product idea, creating pretotypes, or testing market demand.",
+      "source": "plugin"
+    },
+    {
+      "name": "brainstorm-ideas-existing",
+      "description": "Brainstorm product ideas for an existing product using multi-perspective ideation from PM, Designer, and Engineer viewpoints. Use when generating new feature ideas, brainstorming solutions for an identified opportunity, or ideating with a product trio.",
+      "source": "plugin"
+    },
+    {
+      "name": "brainstorm-ideas-new",
+      "description": "Brainstorm feature ideas for a new product in initial discovery from PM, Designer, and Engineer perspectives. Use when starting product discovery for a new product, exploring features for a startup idea, or doing initial ideation.",
+      "source": "plugin"
+    },
+    {
+      "name": "brainstorm-okrs",
+      "description": "Brainstorm team-level OKRs aligned with company objectives — qualitative objectives with measurable key results. Use when setting quarterly OKRs, aligning team goals with company strategy, drafting objectives, or learning how to write effective OKRs.",
+      "source": "plugin"
+    },
+    {
+      "name": "browse",
+      "description": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "build-mcp-app",
+      "description": "This skill should be used when the user wants to build an \"MCP app\", add \"interactive UI\" or \"widgets\" to an MCP server, \"render components in chat\", build \"MCP UI resources\", make a tool that shows a \"form\", \"picker\", \"dashboard\" or \"confirmation dialog\" inline in the conversation, or mentions \"apps SDK\" in the context of MCP. Use AFTER the build-mcp-server skill has settled the deployment model, or when the user already knows they want UI widgets.",
+      "source": "plugin"
+    },
+    {
+      "name": "build-mcp-server",
+      "description": "This skill should be used when the user asks to \"build an MCP server\", \"create an MCP\", \"make an MCP integration\", \"wrap an API for Claude\", \"expose tools to Claude\", \"make an MCP app\", or discusses building something with the Model Context Protocol. It is the entry point for MCP server development — it interrogates the user about their use case, determines the right deployment model (remote HTTP, MCPB, local stdio), picks a tool-design pattern, and hands off to specialized skills.",
+      "source": "plugin"
+    },
+    {
+      "name": "build-mcpb",
+      "description": "This skill should be used when the user wants to \"package an MCP server\", \"bundle an MCP\", \"make an MCPB\", \"ship a local MCP server\", \"distribute a local MCP\", discusses \".mcpb files\", mentions bundling a Node or Python runtime with their MCP server, or needs an MCP server that interacts with the local filesystem, desktop apps, or OS and must be installable without the user having Node/Python set up.",
+      "source": "plugin"
+    },
+    {
+      "name": "business-model",
+      "description": "Generate a Business Model Canvas with all 9 building blocks. Use when creating a business model, documenting how a business creates value, or analyzing an existing business model.",
+      "source": "plugin"
+    },
+    {
+      "name": "canary",
+      "description": "Post-deploy canary monitoring. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "cardputer-buddy",
+      "description": "Iterate on the Cardputer-Adv MicroPython app bundle (Claude Buddy, Snake, Hello) after the device is already provisioned via m5-onboard. Use when the user wants to add a new app, push a single changed .py without re-flashing, watch device serial logs, or run a one-shot REPL command. Trigger on \"add an app\", \"push to the cardputer\", \"tail the device\", \"run on the device\", or follow-up work after /maker-setup.",
+      "source": "plugin"
+    },
+    {
+      "name": "careful",
+      "description": "Safety guardrails for destructive commands. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "claude-automation-recommender",
+      "description": "Analyze a codebase and recommend Claude Code automations (hooks, subagents, skills, plugins, MCP servers). Use when user asks for automation recommendations, wants to optimize their Claude Code setup, mentions improving Claude Code workflows, asks how to first set up Claude Code for a project, or wants to know what Claude Code features they should use.",
+      "source": "plugin"
+    },
+    {
+      "name": "claude-md-improver",
+      "description": "Audit and improve CLAUDE.md files in repositories. Use when user asks to check, audit, update, improve, or fix CLAUDE.md files. Scans for all CLAUDE.md files, evaluates quality against templates, outputs quality report, then makes targeted updates. Also use when the user mentions \"CLAUDE.md maintenance\" or \"project memory optimization\".",
+      "source": "plugin"
+    },
+    {
+      "name": "codex",
+      "description": "OpenAI Codex CLI wrapper — three modes. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "cohort-analysis",
+      "description": "Perform cohort analysis on user engagement data — retention curves, feature adoption trends, and segment-level insights. Use when analyzing user retention by cohort, studying feature adoption over time, investigating churn patterns, or identifying engagement trends.",
+      "source": "plugin"
+    },
+    {
+      "name": "command-development",
+      "description": "This skill should be used when the user asks to \"create a slash command\", \"add a command\", \"write a custom command\", \"define command arguments\", \"use command frontmatter\", \"organize commands\", \"create command with file references\", \"interactive command\", \"use AskUserQuestion in command\", or needs guidance on slash command structure, YAML frontmatter fields, dynamic arguments, bash execution in commands, user interaction patterns, or command development best practices for Claude Code.",
+      "source": "plugin"
+    },
+    {
+      "name": "competitive-battlecard",
+      "description": "Create sales-ready competitive battlecards comparing your product against a specific competitor — positioning, feature comparison, objection handling, and win/loss patterns. Use when preparing sales teams, creating competitive materials, or responding to 'why not competitor X?",
+      "source": "plugin"
+    },
+    {
+      "name": "competitor-analysis",
+      "description": "Analyze competitors with strengths, weaknesses, and differentiation opportunities. Identifies direct competitors and maps the competitive landscape. Use when doing competitive research, preparing a competitive brief, or finding differentiation opportunities.",
+      "source": "plugin"
+    },
+    {
+      "name": "configure",
+      "description": "Set up the Discord channel — save the bot token and review access policy. Use when the user pastes a Discord bot token, asks to configure Discord, asks \"how do I set this up\" or \"who can reach me,\" or wants to check channel status.",
+      "source": "plugin"
+    },
+    {
+      "name": "context-restore",
+      "description": "Restore working context saved earlier by /context-save. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "context-save",
+      "description": "Save working context. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "create-prd",
+      "description": "Create a Product Requirements Document using a comprehensive 8-section template covering problem, objectives, segments, value propositions, solution, and release planning. Use when writing a PRD, documenting product requirements, preparing a feature spec, or reviewing an existing PRD.",
+      "source": "plugin"
+    },
+    {
+      "name": "cso",
+      "description": "Chief Security Officer mode. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "customer-journey-map",
+      "description": "Create an end-to-end customer journey map with stages, touchpoints, emotions, pain points, and opportunities. Use when mapping the customer experience, identifying friction points, improving onboarding, or visualizing the user journey.",
+      "source": "plugin"
+    },
+    {
+      "name": "design-consultation",
+      "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview... (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "design-html",
+      "description": "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "design-review",
+      "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "design-shotgun",
+      "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "devex-review",
+      "description": "Live developer experience audit. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "diagram",
+      "description": "Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you can open (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "document-generate",
+      "description": "Generate missing documentation from scratch for a feature, module, or entire project. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "document-release",
+      "description": "Post-ship documentation update. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "draft-nda",
+      "description": "Draft a detailed Non-Disclosure Agreement between two parties covering information types, jurisdiction, and clauses needing legal review. Use when creating confidentiality agreements or preparing an NDA for a partnership.",
+      "source": "plugin"
+    },
+    {
+      "name": "dummy-dataset",
+      "description": "Generate realistic dummy datasets for testing with customizable columns, constraints, and output formats (CSV, JSON, SQL, Python script). Use when creating test data, building mock datasets, or generating sample data for development and demos.",
+      "source": "plugin"
+    },
+    {
+      "name": "example-command",
+      "description": "An example user-invoked skill that demonstrates frontmatter options and the skills/<name>/SKILL.md layout",
+      "source": "plugin"
+    },
+    {
+      "name": "example-skill",
+      "description": "This skill should be used when the user asks to \"demonstrate skills\", \"show skill format\", \"create a skill template\", or discusses skill development patterns. Provides a reference template for creating Claude Code plugin skills.",
+      "source": "plugin"
+    },
+    {
+      "name": "freeze",
+      "description": "Restrict file edits to a specific directory for the session. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "source": "plugin"
+    },
+    {
+      "name": "grammar-check",
+      "description": "Identify grammar, logical, and flow errors in text and suggest targeted fixes without rewriting the entire text. Use when proofreading content, checking writing quality, or reviewing a draft.",
+      "source": "plugin"
+    },
+    {
+      "name": "growth-loops",
+      "description": "Identify growth loops (flywheels) for sustainable traction. Evaluates 5 loop types: Viral, Usage, Collaboration, User-Generated, and Referral. Use when designing growth mechanisms, building product-led traction, or understanding how growth loops work.",
+      "source": "plugin"
+    },
+    {
+      "name": "gstack",
+      "description": "Fast headless browser for QA testing and site dogfooding. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "gstack-upgrade",
+      "description": "Upgrade gstack to the latest version.",
+      "source": "gstack/local"
+    },
+    {
+      "name": "gtm-motions",
+      "description": "Identify the best GTM motions and tools across 7 motion types: Inbound, Outbound, Paid Digital, Community, Partners, ABM, and PLG. Use when selecting marketing channels, choosing between inbound and outbound strategy, or planning cross-channel campaigns.",
+      "source": "plugin"
+    },
+    {
+      "name": "gtm-strategy",
+      "description": "Create a go-to-market strategy covering marketing channels, messaging, success metrics, and launch timeline. Use when planning a product launch, creating a GTM plan from scratch, or defining a launch strategy for a new market.",
+      "source": "plugin"
+    },
+    {
+      "name": "guard",
+      "description": "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "health",
+      "description": "Code quality dashboard. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "hook-development",
+      "description": "This skill should be used when the user asks to \"create a hook\", \"add a PreToolUse/PostToolUse/Stop hook\", \"validate tool use\", \"implement prompt-based hooks\", \"use ${CLAUDE_PLUGIN_ROOT}\", \"set up event-driven automation\", \"block dangerous commands\", or mentions hook events (PreToolUse, PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit, PreCompact, Notification). Provides comprehensive guidance for creating and implementing Claude Code plugin hooks with focus on advanced prompt-based hooks API.",
+      "source": "plugin"
+    },
+    {
+      "name": "ideal-customer-profile",
+      "description": "Identify the Ideal Customer Profile (ICP) from research data with demographics, behaviors, JTBD, and needs. Use when defining your ICP, analyzing PMF survey data, or understanding who your best customers are.",
+      "source": "plugin"
+    },
+    {
+      "name": "identify-assumptions-existing",
+      "description": "Identify risky assumptions for a feature idea in an existing product across Value, Usability, Viability, and Feasibility. Uses multi-perspective devil's advocate thinking. Use when stress-testing a feature idea, doing risk assessment, or preparing for assumption mapping.",
+      "source": "plugin"
+    },
+    {
+      "name": "identify-assumptions-new",
+      "description": "Identify risky assumptions for a new product idea across 8 risk categories including Go-to-Market, Strategy, and Team. Use when evaluating startup risks, assessing a new product concept, or mapping assumptions for a new venture.",
+      "source": "plugin"
+    },
+    {
+      "name": "intended-vs-implemented",
+      "description": "The method for finding the gap between what a system is supposed to do and what the code actually does — the class of bug generic scanners miss because they have no model of intent. Defines what counts as documented intent, what counts as implementation evidence, which mismatches matter, and how to avoid hand-wavy findings. Use when auditing AI-built code, reviewing access control against documented permissions, or checking whether a codebase matches its own documentation.",
+      "source": "plugin"
+    },
+    {
+      "name": "interview-script",
+      "description": "Create a structured customer interview script with JTBD probing questions, warm-up, core exploration, and wrap-up sections. Follows The Mom Test principles — no leading questions, no pitching, focus on past behavior. Use when preparing for user interviews, creating interview guides, or planning discovery research.",
+      "source": "plugin"
+    },
+    {
+      "name": "investigate",
+      "description": "Systematic debugging with root cause investigation. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ios-clean",
+      "description": "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ios-design-review",
+      "description": "Visual design audit for iOS apps on real hardware. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ios-fix",
+      "description": "Autonomous iOS bug fixer. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ios-qa",
+      "description": "Live-device iOS QA for SwiftUI apps. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ios-sync",
+      "description": "Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "job-stories",
+      "description": "Create job stories using the 'When [situation], I want to [motivation], so I can [outcome]' format with detailed acceptance criteria. Use when writing job stories, creating JTBD-style backlog items, or expressing user situations and motivations.",
+      "source": "plugin"
+    },
+    {
+      "name": "land-and-deploy",
+      "description": "Land and deploy workflow. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "landing-report",
+      "description": "Read-only queue dashboard for workspace-aware ship. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "lean-canvas",
+      "description": "Generate a Lean Canvas with problem, solution, metrics, cost structure, UVP, unfair advantage, channels, segments, and revenue. Use when exploring a lean startup canvas, testing a business hypothesis, or modeling a new venture.",
+      "source": "plugin"
+    },
+    {
+      "name": "learn",
+      "description": "Manage project learnings.",
+      "source": "gstack/local"
+    },
+    {
+      "name": "m5-onboard",
+      "description": "End-to-end onboarding for a freshly-plugged-in M5Stack ESP32 device (Cardputer, Cardputer-Adv, Core, CoreS3, Stick) — detect on USB, flash UIFlow 2.0 firmware, and install the Claude Buddy MicroPython app bundle. Use whenever the user plugs in or wants to flash/provision/reset an M5Stack or ESP32 board, or says \"m5-onboard go\".",
+      "source": "plugin"
+    },
+    {
+      "name": "make-pdf",
+      "description": "Turn any markdown file into a publication-quality PDF. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "market-segments",
+      "description": "Identify 3-5 potential customer segments with demographics, JTBD, and product fit analysis. Use when exploring market segments, identifying target audiences, evaluating new markets, or learning how to segment a market.",
+      "source": "plugin"
+    },
+    {
+      "name": "market-sizing",
+      "description": "Estimate market size using TAM, SAM, and SOM with top-down and bottom-up approaches. Use when sizing a market opportunity, estimating addressable market, preparing for investor pitches, or evaluating market entry.",
+      "source": "plugin"
+    },
+    {
+      "name": "marketing-ideas",
+      "description": "Generate 5 creative, cost-effective marketing ideas with channels, messaging, and engagement rationale. Use when brainstorming marketing campaigns, planning product promotion, or looking for creative marketing tactics.",
+      "source": "plugin"
+    },
+    {
+      "name": "math-olympiad",
+      "description": "",
+      "source": "plugin"
+    },
+    {
+      "name": "mcp-integration",
+      "description": "This skill should be used when the user asks to \"add MCP server\", \"integrate MCP\", \"configure MCP in plugin\", \"use .mcp.json\", \"set up Model Context Protocol\", \"connect external service\", mentions \"${CLAUDE_PLUGIN_ROOT} with MCP\", or discusses MCP server types (SSE, stdio, HTTP, WebSocket). Provides comprehensive guidance for integrating Model Context Protocol servers into Claude Code plugins for external tool and service integration.",
+      "source": "plugin"
+    },
+    {
+      "name": "metrics-dashboard",
+      "description": "Define and design a product metrics dashboard with key metrics, data sources, visualization types, and alert thresholds. Use when creating a metrics dashboard, defining KPIs, setting up product analytics, or building a data monitoring plan.",
+      "source": "plugin"
+    },
+    {
+      "name": "monetization-strategy",
+      "description": "Brainstorm 3-5 monetization strategies with audience fit, risks, and validation experiments. Use when exploring revenue models, evaluating pricing strategies, or deciding how to monetize a product.",
+      "source": "plugin"
+    },
+    {
+      "name": "north-star-metric",
+      "description": "Define a North Star Metric and 3-5 supporting input metrics that form a metrics constellation. Classify the business game (Attention, Transaction, Productivity) and validate against 7 criteria for an effective North Star. Use when choosing a North Star Metric, setting up a metrics framework, learning about the North Star Framework, or deciding what to measure.",
+      "source": "plugin"
+    },
+    {
+      "name": "office-hours",
+      "description": "YC Office Hours — two modes. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "open-gstack-browser",
+      "description": "Launch GStack Browser — AI-controlled Chromium with the sidebar extension baked in.",
+      "source": "gstack/local"
+    },
+    {
+      "name": "opportunity-solution-tree",
+      "description": "Build an Opportunity Solution Tree (OST) to structure product discovery — map a desired outcome to opportunities, solutions, and experiments. Based on Teresa Torres' Continuous Discovery Habits. Use when structuring discovery work, mapping opportunities to solutions, or deciding what to build next.",
+      "source": "plugin"
+    },
+    {
+      "name": "outcome-roadmap",
+      "description": "Transform an output-focused roadmap into an outcome-focused one that communicates strategic intent. Rewrites initiatives as outcome statements reflecting user and business impacts. Use when shifting to outcome roadmaps, making a roadmap more strategic, or rewriting feature lists as outcomes.",
+      "source": "plugin"
+    },
+    {
+      "name": "pair-agent",
+      "description": "Pair a remote AI agent with your browser. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "pestle-analysis",
+      "description": "Perform a PESTLE analysis covering Political, Economic, Social, Technological, Legal, and Environmental factors. Use when assessing the macro environment, doing strategic planning, or evaluating external factors affecting your business.",
+      "source": "plugin"
+    },
+    {
+      "name": "plan-ceo-review",
+      "description": "CEO/founder-mode plan review. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "plan-design-review",
+      "description": "Designer's eye plan review — interactive, like CEO and Eng review. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "plan-devex-review",
+      "description": "Interactive developer experience plan review. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "plan-eng-review",
+      "description": "Eng manager-mode plan review. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "plan-tune",
+      "description": "Self-tuning question sensitivity + developer psychographic for gstack (v1: observational). (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "playground",
+      "description": "Creates interactive HTML playgrounds — self-contained single-file explorers that let users configure something visually through controls, see a live preview, and copy out a prompt. Use when the user asks to make a playground, explorer, or interactive tool for a topic.",
+      "source": "plugin"
+    },
+    {
+      "name": "plugin-settings",
+      "description": "This skill should be used when the user asks about \"plugin settings\", \"store plugin configuration\", \"user-configurable plugin\", \".local.md files\", \"plugin state files\", \"read YAML frontmatter\", \"per-project plugin settings\", or wants to make plugin behavior configurable. Documents the .claude/plugin-name.local.md pattern for storing plugin-specific configuration with YAML frontmatter and markdown content.",
+      "source": "plugin"
+    },
+    {
+      "name": "plugin-structure",
+      "description": "This skill should be used when the user asks to \"create a plugin\", \"scaffold a plugin\", \"understand plugin structure\", \"organize plugin components\", \"set up plugin.json\", \"use ${CLAUDE_PLUGIN_ROOT}\", \"add commands/agents/skills/hooks\", \"configure auto-discovery\", or needs guidance on plugin directory layout, manifest configuration, component organization, file naming conventions, or Claude Code plugin architecture best practices.",
+      "source": "plugin"
+    },
+    {
+      "name": "porters-five-forces",
+      "description": "Perform Porter's Five Forces analysis — competitive rivalry, supplier power, buyer power, threat of substitutes, and threat of new entrants. Use when analyzing industry dynamics, assessing competitive forces, or evaluating market attractiveness.",
+      "source": "plugin"
+    },
+    {
+      "name": "positioning-ideas",
+      "description": "Brainstorm product positioning ideas differentiated from competitors. Identifies top competitors and generates positioning statements with rationale. Use when developing product positioning, differentiating from competitors, or crafting brand positioning strategy.",
+      "source": "plugin"
+    },
+    {
+      "name": "pre-mortem",
+      "description": "Run a pre-mortem risk analysis on a PRD or launch plan. Categorizes risks as Tigers (real problems), Paper Tigers (overblown concerns), and Elephants (unspoken worries), then classifies as launch-blocking, fast-follow, or track. Use when preparing for launch, stress-testing a product plan, or identifying what could go wrong.",
+      "source": "plugin"
+    },
+    {
+      "name": "pricing-strategy",
+      "description": "Analyze and design pricing strategies including pricing models, competitive pricing analysis, willingness-to-pay estimation, and price elasticity. Use when setting prices, evaluating pricing models, preparing for a pricing change, or comparing freemium vs paid approaches.",
+      "source": "plugin"
+    },
+    {
+      "name": "prioritization-frameworks",
+      "description": "Reference guide to 9 prioritization frameworks with formulas, when-to-use guidance, and templates — RICE, ICE, Kano, MoSCoW, Opportunity Score, and more. Use when selecting a prioritization method, comparing frameworks like RICE vs ICE, or learning how different prioritization approaches work.",
+      "source": "plugin"
+    },
+    {
+      "name": "prioritize-assumptions",
+      "description": "Prioritize assumptions using an Impact × Risk matrix and suggest experiments for each. Use when triaging a list of assumptions, deciding what to test first, or applying the assumption prioritization canvas.",
+      "source": "plugin"
+    },
+    {
+      "name": "prioritize-features",
+      "description": "Prioritize a backlog of feature ideas based on impact, effort, risk, and strategic alignment with top 5 recommendations. Use when prioritizing a feature backlog, making scope decisions, or ranking product ideas.",
+      "source": "plugin"
+    },
+    {
+      "name": "privacy-policy",
+      "description": "Draft a detailed privacy policy covering data types, jurisdiction, GDPR and compliance considerations, and clauses needing legal review. Use when creating a privacy policy, updating data protection documentation, or preparing for compliance.",
+      "source": "plugin"
+    },
+    {
+      "name": "product-name",
+      "description": "Brainstorm 5 unique, memorable product names with rationale aligned to brand values and target audience. Use when naming a new product, rebranding, or exploring product name ideas.",
+      "source": "plugin"
+    },
+    {
+      "name": "product-strategy",
+      "description": "Create a comprehensive product strategy using the 9-section Product Strategy Canvas — vision, segments, costs, value propositions, trade-offs, metrics, growth, capabilities, and defensibility. Use when building a product strategy, creating a strategic plan, or defining product direction.",
+      "source": "plugin"
+    },
+    {
+      "name": "product-vision",
+      "description": "Brainstorm an inspiring, achievable, and emotional product vision that motivates teams and aligns stakeholders. Use when defining or refining a product vision, creating a vision statement, or aligning the team around a shared direction.",
+      "source": "plugin"
+    },
+    {
+      "name": "project-artifact",
+      "description": "Generate and publish a project status artifact — an opinionated, tabbed status page for a project too big for one update (overview & success criteria, the workstream sequence, next steps, plus background, plan, risks & open questions, and decisions/FAQ when they earn a tab) — published with the built-in Artifact tool to a default-private claude.ai page the user can share with teammates. Use when a piece of work spans several workstreams and you want a shareable overview kept current. Each artifact is backed by a small per-project config in the plugin data dir, so refreshing it re-gathers live state, redeploys the same URL, and reports only the delta. For software projects whose workstreams are PRs, also read swe.md (the X.Y PR-numbering convention; pulling PR state with gh/git; a per-PR detail block). Needs the built-in Artifact tool (claude.ai login). Not for single-PR changes or public docs.",
+      "source": "plugin"
+    },
+    {
+      "name": "qa",
+      "description": "Systematically QA test a web application and fix bugs found. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "qa-only",
+      "description": "Report-only QA testing. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "release-notes",
+      "description": "Generate user-facing release notes from tickets, PRDs, or changelogs. Creates clear, engaging summaries organized by category (new features, improvements, fixes). Use when writing release notes, creating changelogs, announcing product updates, or summarizing what shipped.",
+      "source": "plugin"
+    },
+    {
+      "name": "retro",
+      "description": "Weekly engineering retrospective. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "review",
+      "description": "Pre-landing PR review. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "review-resume",
+      "description": "Comprehensive PM resume review and tailoring against 10 best practices including XYZ+S formula, keyword optimization, job-specific tailoring, and structure. Use when reviewing a PM resume, preparing for job applications, or improving resume impact.",
+      "source": "plugin"
+    },
+    {
+      "name": "scrape",
+      "description": "Pull data from a web page. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "sentiment-analysis",
+      "description": "Analyze user feedback data to identify segments with sentiment scores, JTBD, and product satisfaction insights. Use when analyzing user feedback at scale, running sentiment analysis on reviews or surveys, or identifying satisfaction patterns.",
+      "source": "plugin"
+    },
+    {
+      "name": "session-report",
+      "description": "Generate an explorable HTML report of Claude Code session usage (tokens, cache, subagents, skills, expensive prompts) from ~/.claude/projects transcripts.",
+      "source": "plugin"
+    },
+    {
+      "name": "setup-browser-cookies",
+      "description": "Import cookies from your real Chromium browser into the headless browse session. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "setup-deploy",
+      "description": "Configure deployment settings for /land-and-deploy.",
+      "source": "gstack/local"
+    },
+    {
+      "name": "setup-gbrain",
+      "description": "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "ship",
+      "description": "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "shipping-artifacts",
+      "description": "The durable documentation set that makes an AI-built (vibe-coded) app reviewable before shipping. A small core every app needs — architecture, user/permission flows, permissions, variables/secrets, and a test-coverage map — plus conditional docs added only when they apply: emails, scheduled work, SEO, and embedded agents/automation. Defines what each doc must capture and how a reviewer or auditor uses it. Use when documenting a codebase for handoff, mapping user journeys and trust-boundary crossings, planning test coverage, or preparing for a security or performance audit.",
+      "source": "plugin"
+    },
+    {
+      "name": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "source": "plugin"
+    },
+    {
+      "name": "skill-development",
+      "description": "This skill should be used when the user wants to \"create a skill\", \"add a skill to plugin\", \"write a new skill\", \"improve skill description\", \"organize skill content\", or needs guidance on skill structure, progressive disclosure, or skill development best practices for Claude Code plugins.",
+      "source": "plugin"
+    },
+    {
+      "name": "skillify",
+      "description": "Codify the most recent successful /scrape flow into a permanent browser-skill on disk. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "spec",
+      "description": "Turn vague intent into a precise, executable spec in five phases. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "sprint-plan",
+      "description": "Plan a sprint with capacity estimation, story selection, dependency mapping, and risk identification. Use when preparing for sprint planning, estimating team capacity, selecting stories, or balancing sprint scope against velocity.",
+      "source": "plugin"
+    },
+    {
+      "name": "sql-queries",
+      "description": "Generate SQL queries from natural language descriptions. Supports BigQuery, PostgreSQL, MySQL, and other dialects. Reads database schemas from uploaded diagrams or documentation. Use when writing SQL, building data reports, exploring databases, or translating business questions into queries.",
+      "source": "plugin"
+    },
+    {
+      "name": "stakeholder-map",
+      "description": "Build a stakeholder map using a power/interest grid, identify communication strategies per quadrant, and generate a communication plan. Use when managing stakeholders, preparing for a launch, aligning cross-functional teams, or planning stakeholder engagement.",
+      "source": "plugin"
+    },
+    {
+      "name": "startup-canvas",
+      "description": "Generate a Startup Canvas combining Product Strategy (9 sections) and Business Model (costs + revenue) for a new product. An alternative to BMC and Lean Canvas that separates strategy from business model. Use when launching a new product or evaluating a startup concept.",
+      "source": "plugin"
+    },
+    {
+      "name": "strategy-red-team",
+      "description": "Red-team a PRD, roadmap, or strategy by attacking its load-bearing assumptions before reality does. Steelmans then attacks each claim, ranks failure modes by impact × likelihood × cheapness-to-test, and returns the cheapest test and kill criteria for each. Use when stress-testing a plan, pressure-testing a strategy, challenging assumptions, or preparing a doc for executive review.",
+      "source": "plugin"
+    },
+    {
+      "name": "summarize-interview",
+      "description": "Summarize a customer interview transcript into a structured template with JTBD, satisfaction signals, and action items. Use when processing interview recordings or transcripts, synthesizing discovery interviews, or creating interview summaries.",
+      "source": "plugin"
+    },
+    {
+      "name": "summarize-meeting",
+      "description": "Summarize a meeting transcript into structured notes with date, participants, topic, key decisions, summary points, and action items. Use when processing meeting recordings, creating meeting notes, writing meeting minutes, or recapping discussions.",
+      "source": "plugin"
+    },
+    {
+      "name": "swot-analysis",
+      "description": "Perform a detailed SWOT analysis — strengths, weaknesses, opportunities, and threats with actionable recommendations. Use when doing strategic assessment, competitive analysis, or evaluating a product or business position.",
+      "source": "plugin"
+    },
+    {
+      "name": "sync-gbrain",
+      "description": "Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. Wraps the gstack-gbrain-sync orchestrator with state (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "test-scenarios",
+      "description": "Create comprehensive test scenarios from user stories with test objectives, starting conditions, user roles, step-by-step actions, and expected outcomes. Use when writing QA test cases, creating test plans, defining acceptance tests, or preparing for feature validation.",
+      "source": "plugin"
+    },
+    {
+      "name": "unfreeze",
+      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack)",
+      "source": "gstack/local"
+    },
+    {
+      "name": "user-personas",
+      "description": "Create refined user personas from research data — 3 personas with JTBD, pains, gains, and unexpected insights. Use when building personas from survey data, creating user profiles from research, or segmenting users for product decisions.",
+      "source": "plugin"
+    },
+    {
+      "name": "user-segmentation",
+      "description": "Segment users from feedback data based on behavior, JTBD, and needs. Identifies at least 3 distinct user segments. Use when segmenting a user base, analyzing diverse user feedback, or building a segmentation model.",
+      "source": "plugin"
+    },
+    {
+      "name": "user-stories",
+      "description": "Create user stories following the 3 C's (Card, Conversation, Confirmation) and INVEST criteria with descriptions, design links, and acceptance criteria. Use when writing user stories, breaking down features into backlog items, or defining acceptance criteria.",
+      "source": "plugin"
+    },
+    {
+      "name": "value-prop-statements",
+      "description": "Generate value proposition statements for marketing, sales, and onboarding from existing value propositions. Use when writing marketing copy, creating sales messaging, or crafting onboarding messages.",
+      "source": "plugin"
+    },
+    {
+      "name": "value-proposition",
+      "description": "Design a detailed value proposition using a 6-part JTBD template — Who, Why, What before, How, What after, Alternatives. Use when creating a value proposition, analyzing customer value delivery, or articulating why customers should choose your product.",
+      "source": "plugin"
+    },
+    {
+      "name": "writing-hookify-rules",
+      "description": "This skill should be used when the user asks to \"create a hookify rule\", \"write a hook rule\", \"configure hookify\", \"add a hookify rule\", or needs guidance on hookify rule syntax and patterns.",
+      "source": "plugin"
+    },
+    {
+      "name": "wwas",
+      "description": "Create product backlog items in Why-What-Acceptance format — independent, valuable, testable items with strategic context. Use when writing structured backlog items, breaking features into work items, or using the WWA format.",
+      "source": "plugin"
+    }
+  ],
+  "plugins": [
+    {
+      "name": "pm-ai-shipping@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-data-analytics@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-execution@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-go-to-market@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-market-research@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-marketing-growth@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-product-discovery@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-product-strategy@pm-skills",
+      "version": "2.0.0"
+    },
+    {
+      "name": "pm-toolkit@pm-skills",
+      "version": "2.0.0"
+    }
+  ]
+}

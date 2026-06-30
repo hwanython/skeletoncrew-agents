@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "_comment": "이 팀이 빨아들이는 4개 업스트림 소스. type=skill 은 연장(도구), type=knowledge 는 페르소나에 주입할 지식. agents 는 이 소스를 인지해야 하는 직원들. lastSyncedSha 는 sync가 갱신.",
+  "sources": {
+    "gstack": {
+      "type": "skill",
+      "url": "https://github.com/garrytan/gstack",
+      "updateVia": "gstack-upgrade",
+      "installPath": "~/.claude/skills",
+      "agents": ["*"],
+      "note": "QA·배포·디자인·리뷰 등 실행 도구. 이름으로 참조 → /gstack-upgrade 로 자동 최신화. 레포엔 미포함.",
+      "lastSyncedSha": null
+    },
+    "pm-skills": {
+      "type": "skill",
+      "url": "https://github.com/phuryn/pm-skills",
+      "updateVia": "marketplace",
+      "installPath": "~/.claude/plugins",
+      "agents": ["product-manager", "growth-marketer", "ai-engineer"],
+      "note": "PM·전략·GTM 플러그인. 마켓플레이스 update 로 최신화. 레포엔 미포함.",
+      "lastSyncedSha": null
+    },
+    "autoresearch": {
+      "type": "knowledge",
+      "url": "https://github.com/karpathy/autoresearch",
+      "digest": "sources/knowledge/autoresearch.md",
+      "agents": ["product-manager", "ai-engineer"],
+      "note": "자율 리서치 루프 방법론. PM의 디스커버리/리서치, ai-engineer의 에이전트 루프 설계에 주입.",
+      "lastSyncedSha": null
+    },
+    "free-for-dev": {
+      "type": "knowledge",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "digest": "sources/knowledge/free-for-dev.md",
+      "agents": ["devops-engineer", "backend-developer", "frontend-developer", "ai-engineer", "growth-marketer", "product-manager"],
+      "note": "무료티어 서비스 카탈로그. '공짜로 굴리고 스케일업하는 법'을 각 직원이 알게 함.",
+      "lastSyncedSha": null
+    }
+  }
+}
