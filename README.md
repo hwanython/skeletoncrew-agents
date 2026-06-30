@@ -1,63 +1,101 @@
-# SkeletonCrew 🦴 — 1인/비개발자를 위한 AI 직원 팀
+# SkeletonCrew 🦴 — an AI employee team for solo / non-technical founders
 
-> *Skeleton crew*: 조직을 굴리는 데 필요한 최소 인력. 1인 창업가가 **AI 골격 팀**만으로 회사 하나를 돌린다.
+**English** · [한국어](./README.ko.md)
 
-아이디어 하나를 들고 온 **1인 개발자 또는 비개발자**가, PM과 대화하며 **제품화 → 무료티어 운영 → 스케일업**까지
-끝까지 갈 수 있게 만드는 **9명의 AI 직원 팀**. Claude Code 커스텀 서브에이전트 묶음이며, 깃으로 버전관리·공유한다.
+> *Skeleton crew*: the minimum staff needed to keep an operation running. A solo founder runs an entire company with nothing but an **AI skeleton crew**.
 
-## 무엇을 하는가
-- **아이디어 → 제품**: PM이 스펙/PRD로 빚고, 디자이너·엔지니어가 만들고, QA·보안이 게이트하고, devops가 출시.
-- **무료로 굴린다**: 모든 직원이 [free-for-dev](https://github.com/ripienaar/free-for-dev) 지식을 인지 — 호스팅·DB·CDN·LLM 추론을 무료티어로.
-- **멈추지 않는다**: 업스트림 도구·지식이 진화하면 `sync` 가 직원들의 인식을 따라가게 갱신한다.
+A bundle of **9 AI employees** (Claude Code custom subagents) that takes a single idea — handed over by a **solo developer or a non-developer** — and carries it all the way through **product → free-tier operation → scale-up**, in conversation with the PM. Version-controlled and shared via git.
 
-## 팀 명단
-| 직원 | 역할 |
-|------|------|
-| `product-manager` | 아이디어 → 스펙/PRD/로드맵 |
-| `product-designer` | UX/UI·디자인 시스템 |
-| `ai-engineer` | AI/LLM 기능 |
-| `backend-developer` | API·DB·로직 |
-| `frontend-developer` | UI 구현 |
-| `qa-engineer` | 실제 구동·버그 검증 |
-| `security-officer` | 출시 전 보안 게이트 |
-| `devops-engineer` | 배포·인프라·모니터링(SRE) |
-| `growth-marketer` | GTM·성장 |
+## What it does
+- **Idea → product**: the PM shapes specs/PRDs, designer & engineers build, QA & security gate, devops ships.
+- **Runs for free**: every employee knows [free-for-dev](https://github.com/ripienaar/free-for-dev) — hosting, DB, CDN, LLM inference on free tiers.
+- **Never goes stale**: when upstream tools & knowledge evolve, `sync` keeps the employees' awareness current.
 
-표준 파이프라인: **PM → 디자이너/엔지니어 → QA → 보안 → devops → growth.** 직원끼리 직접 대화 못 하고, 항상 메인(CEO)을 거친다.
+## The crew
+| Employee | Role |
+|----------|------|
+| `product-manager` | idea → spec / PRD / roadmap |
+| `product-designer` | UX/UI & design system |
+| `ai-engineer` | AI/LLM features |
+| `backend-developer` | API · DB · logic |
+| `frontend-developer` | UI implementation |
+| `qa-engineer` | real-run bug verification |
+| `security-officer` | pre-launch security gate |
+| `devops-engineer` | deploy · infra · monitoring (SRE) |
+| `growth-marketer` | GTM & growth |
 
-## 4개 업스트림 소스
-| 소스 | 타입 | 역할 |
-|------|------|------|
-| [garrytan/gstack](https://github.com/garrytan/gstack) | 스킬 | 실행 도구. `/gstack-upgrade` 로 자동 최신화 |
-| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 스킬 | PM·전략·GTM. 마켓플레이스로 최신화 |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 지식 | 자율 리서치 방법론 → 페르소나 주입 |
-| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 지식 | 무료티어 카탈로그 → 페르소나 주입 |
+Standard pipeline: **PM → designer / engineers → QA → security → devops → growth.** Employees never talk to each other directly — everything routes through you (the CEO).
 
-> 스킬은 각자 업데이터로 최신화되므로 레포에 **담지 않는다**. 레포는 "어떤 스킬이 있는가"의 스냅샷과 이력만 추적한다.
-> 자세한 이유·구조는 [`REFERENCES.md`](./REFERENCES.md).
+## How to call the crew
 
-## 설치 (새 컴퓨터)
+**1. By name (most reliable).** Just put the employee's name in a normal sentence — any language works (it's not an `@` mention).
+```
+have product-manager turn this idea into a PRD
+get backend-developer to find the root cause of this bug
+ask qa-engineer to test the login flow
+```
+
+**2. Auto-delegation (no name).** Describe the task and the main agent routes it by each employee's `description`.
+```
+what should I do first to productize this idea?   → product-manager
+this screen looks bland, design it                → product-designer
+is it safe to ship security-wise?                 → security-officer
+let's deploy                                      → devops-engineer
+```
+
+**3. In parallel.** Independent work can run several employees at once.
+```
+for this idea: PM writes the PRD and the designer drafts mockups, in parallel
+```
+
+> Each employee works in its **own context** and returns only the final result to the main chat, so delegating big tasks keeps your main thread clean.
+
+## Customize — rename employees, tweak personas, add new ones
+Every employee is a single file: `agents/<name>.md`.
+```markdown
+---
+name: product-manager      # ← the call handle. Rename this and you call them by the new name.
+description: when to use this employee   # ← drives auto-delegation; make triggers concrete
+---
+(system prompt = persona, mindset, skills, working style, collaboration)
+```
+- **Rename an employee** → change the `name:` field (and the filename to match). e.g. `name: cto` → now you call `cto`.
+- **Add a new employee** → drop in a new `.md` in the same format.
+- **Tune a persona** → edit the body **outside** the `<!-- managed -->` block (that block is auto-synced; everything else is yours).
+- **Auto-delegation not firing?** → make the `description` more specific with trigger phrases.
+
+After editing, the change is live immediately (`~/.claude/agents` is symlinked to this repo) — then `git commit` / `push`.
+
+## Four upstream sources
+| Source | Type | Role |
+|--------|------|------|
+| [garrytan/gstack](https://github.com/garrytan/gstack) | skill | execution tools. auto-updated via `/gstack-upgrade` |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | skill | PM · strategy · GTM. updated via marketplace |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | knowledge | autonomous-research methodology → injected into personas |
+| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | knowledge | free-tier catalog → injected into personas |
+
+> Skills update through their own updaters, so they are **not** vendored into this repo — copying them would go stale instantly and bloat the repo. Employees reference skills **by name**, so tool improvements flow in automatically. The repo only tracks a **snapshot** of which skills exist and how that changes over time. See [`REFERENCES.md`](./REFERENCES.md).
+
+## Install (new machine)
 ```bash
 git clone https://github.com/hwanython/skeletoncrew-agents.git
-cd skeletoncrew-agents && ./install.sh   # ~/.claude/agents 로 심볼릭 링크
+cd skeletoncrew-agents && ./install.sh   # symlinks ~/.claude/agents → this repo
 ```
-이후 어느 프로젝트에서든 직원 이름으로 호출(`product-manager 한테 ...`)하거나 자동 위임된다.
 
-## 관리 루틴
+## Management routine
 ```bash
-bash sync/sync.sh     # 1) 스킬 스냅샷 2) 지식 소스 fetch 3) 변경 요약(SYNC-REPORT.md)
-                      # 이후 Claude 에게: "sync/SYNC.md 절차대로 에이전트 갱신해줘"
+bash sync/sync.sh     # 1) snapshot the skill catalog  2) fetch knowledge sources  3) summarize changes (SYNC-REPORT.md)
+                      # then tell Claude: "update the agents per sync/SYNC.md"
 ```
-- 직원 페르소나 수정 → `agents/*.md` 의 `<!-- managed -->` **밖**을 편집 → commit/push.
-- 새 스킬/지식 반영 → 위 sync 루틴. managed 블록만 자동 갱신되고 페르소나는 보존된다.
+Only the `<!-- managed -->` block is regenerated; handwritten personas are preserved.
 
-## 구조
+## Layout
 ```
-agents/            9명 페르소나 (코어=손글씨, <!-- managed -->=자동)
+agents/            9 personas (core = handwritten, <!-- managed --> = auto-synced)
 sources/
-  sources.json     4개 소스 + 담당 에이전트 매핑
-  manifests/       스킬 카탈로그 스냅샷(이력 추적)
-  knowledge/       distill된 지식 digest (free-for-dev, autoresearch)
-sync/              snapshot.py · sync.sh · SYNC.md(AI 절차)
-install.sh         ~/.claude 연결
+  sources.json     4 sources + employee mapping
+  manifests/       skill-catalog snapshot (change history)
+  knowledge/       distilled digests (free-for-dev, autoresearch)
+sync/              snapshot.py · sync.sh · SYNC.md (the AI-side procedure)
+install.sh         wire into ~/.claude
 ```
