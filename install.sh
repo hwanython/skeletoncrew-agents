@@ -20,7 +20,7 @@ link () {
   echo "  링크: $dst → $src"
 }
 
-echo "▶ claude-team → $CLAUDE 연결"
+echo "▶ SkeletonCrew → $CLAUDE 연결"
 link "$REPO/agents" "$CLAUDE/agents"
 
 echo "✓ 완료. 이제 어느 프로젝트에서든 9명의 직원을 호출할 수 있습니다."

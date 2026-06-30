@@ -1,4 +1,6 @@
-# claude-team — 1인/비개발자를 위한 AI 직원 팀
+# SkeletonCrew 🦴 — 1인/비개발자를 위한 AI 직원 팀
+
+> *Skeleton crew*: 조직을 굴리는 데 필요한 최소 인력. 1인 창업가가 **AI 골격 팀**만으로 회사 하나를 돌린다.
 
 아이디어 하나를 들고 온 **1인 개발자 또는 비개발자**가, PM과 대화하며 **제품화 → 무료티어 운영 → 스케일업**까지
 끝까지 갈 수 있게 만드는 **9명의 AI 직원 팀**. Claude Code 커스텀 서브에이전트 묶음이며, 깃으로 버전관리·공유한다.
@@ -36,8 +38,8 @@
 
 ## 설치 (새 컴퓨터)
 ```bash
-git clone <이 레포 URL> claude-team
-cd claude-team && ./install.sh        # ~/.claude/agents 로 심볼릭 링크
+git clone https://github.com/hwanython/skeletoncrew-agents.git
+cd skeletoncrew-agents && ./install.sh   # ~/.claude/agents 로 심볼릭 링크
 ```
 이후 어느 프로젝트에서든 직원 이름으로 호출(`product-manager 한테 ...`)하거나 자동 위임된다.
 
