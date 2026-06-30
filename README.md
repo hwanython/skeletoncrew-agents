@@ -99,3 +99,6 @@ sources/
 sync/              snapshot.py · sync.sh · SYNC.md (the AI-side procedure)
 install.sh         wire into ~/.claude
 ```
+
+## License
+[MIT](./LICENSE) © 2026 hwanython

@@ -100,3 +100,6 @@ sources/
 sync/              snapshot.py · sync.sh · SYNC.md(AI 절차)
 install.sh         ~/.claude 연결
 ```
+
+## 라이센스
+[MIT](./LICENSE) © 2026 hwanython
