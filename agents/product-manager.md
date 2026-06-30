@@ -30,5 +30,21 @@ description: 제품 전략·발굴·실행을 책임지는 전문 PM. 막연한 
 
 ## 🧩 보유 도구·지식 (sync 자동 관리 — 이 블록 직접 수정 금지)
 <!-- managed:START -->
-_동기화 전. `bash sync/sync.sh` 후 `sync/SYNC.md` 절차로 채워집니다._
+> 자동 생성 영역 — 출처: free-for-dev, autoresearch. (`sync/SYNC.md` 절차로 갱신)
+
+**💸 무료티어로 굴리기 (free-for-dev)**
+- 무료 풀스택 MVP 조합: **Supabase + Vercel/Cloudflare Pages + Resend + Sentry + PostHog** — 전부 $0.
+- 단일 벤더 제로코스트: **Cloudflare 올인**(Workers+D1+R2+KV+Queues+Pages).
+- 내부 도구·어드민은 노코드: **Retool**(5유저)·**Airtable**·**Appsmith/ToolJet**(오픈소스).
+- 실험·피처플래그·서베이는 **PostHog/Statsig** 하나로 분석까지 통합.
+- 스케일 시 첫 비용 4지점을 로드맵 가정으로: 인증 MAU · 이메일 발송량 · DB 저장/연결 · 객체스토리지 에그레스(R2로 회피).
+- 운영 자동화는 코드 전에 **Zapier/Make/Pipedream** 무료티어로 검증.
+
+**🔬 리서치 루프 방법론 (autoresearch)**
+- 항상 baseline(현재 전환율·리텐션·핵심 JTBD)부터 박고 모든 발견을 그 대비로 평가.
+- 가설 1개 단위 루프: 질문1 → 측정 → 강화면 채택·반증이면 폐기. 변수 섞지 않기.
+- 조작 불가능한 단일 비교 지표를 먼저 정하고 도중에 바꾸지 않기.
+- 좋아 보이는 인사이트일수록 반증 먼저 — near-miss 피드백 조합으로 새 각도.
+- 모든 시도를 채택/폐기/무효 사유까지 구조화 로그로 남김.
+- 막히면 종료가 아니라 1차자료 재독·인접시장·반례로 질문 재생성.
 <!-- managed:END -->

@@ -28,5 +28,5 @@ description: UX/UI와 디자인 시스템을 책임지는 프로덕트 디자이
 
 ## 🧩 보유 도구·지식 (sync 자동 관리 — 이 블록 직접 수정 금지)
 <!-- managed:START -->
-_동기화 전. `bash sync/sync.sh` 후 `sync/SYNC.md` 절차로 채워집니다._
+> 현재 이 직원에 동기화된 추가 도구·지식 없음. (free-for-dev/autoresearch 대상 외 — `sources/sources.json` 매핑이나 스킬 카탈로그 변화 시 sync가 갱신)
 <!-- managed:END -->

@@ -6,10 +6,10 @@
 
 | 소스 | 타입 | 역할 | 최신화 방법 | 마지막 검토 |
 |------|------|------|-------------|-------------|
-| [garrytan/gstack](https://github.com/garrytan/gstack) | 스킬 | 실행 도구(QA·배포·디자인·리뷰·리서치 등) | `/gstack-upgrade` | (sync 시 기록) |
-| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 스킬 | PM·전략·GTM 플러그인 | 마켓플레이스 update | (sync 시 기록) |
-| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 지식 | 자율 리서치 루프 방법론 | clone diff → distill | (sync 시 기록) |
-| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 지식 | 무료티어 서비스 카탈로그 | clone diff → distill | (sync 시 기록) |
+| [garrytan/gstack](https://github.com/garrytan/gstack) | 스킬 | 실행 도구(QA·배포·디자인·리뷰·리서치 등) | `/gstack-upgrade` | 2026-06-30 · catalog 75039e1 |
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | 스킬 | PM·전략·GTM 플러그인 | 마켓플레이스 update | 2026-06-30 · catalog 75039e1 |
+| [karpathy/autoresearch](https://github.com/karpathy/autoresearch) | 지식 | 자율 리서치 루프 방법론 | clone diff → distill | 2026-06-30 · 228791f |
+| [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev) | 지식 | 무료티어 서비스 카탈로그 | clone diff → distill | 2026-06-30 · 18475f8 |
 
 ## 왜 스킬은 레포에 안 담는가
 gstack(1.1GB)·pm-skills는 각자의 업데이터로 이미 최신화된다. 복사해 담으면 즉시 낡고, 용량만 커진다.

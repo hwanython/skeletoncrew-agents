@@ -29,5 +29,13 @@ description: GTM·성장·마케팅을 책임지는 그로스 마케터. 출시 
 
 ## 🧩 보유 도구·지식 (sync 자동 관리 — 이 블록 직접 수정 금지)
 <!-- managed:START -->
-_동기화 전. `bash sync/sync.sh` 후 `sync/SYNC.md` 절차로 채워집니다._
+> 자동 생성 영역 — 출처: free-for-dev. (`sync/SYNC.md` 절차로 갱신)
+
+**💸 무료티어로 굴리기 (free-for-dev)**
+- 프로덕트 애널리틱스 1순위 **PostHog**(100만 이벤트/월+세션리플레이·피처플래그·서베이); 세션녹화·히트맵 **Microsoft Clarity**(완전 무료·무제한).
+- 마케팅 이메일 **MailerLite**(구독1,000/12,000월)·**EmailOctopus**(2,500); 트랜잭셔널 겸용 **Brevo**(9,000/월).
+- 프라이버시 친화 웹분석 **Umami/GoatCounter/Plausible**(쿠키리스), 표준은 **GA**.
+- A/B·실험 **Statsig**(이벤트 100만/월·무제한 시트)·**GrowthBook**(오픈소스).
+- 결제·구독 **Stripe**(월정액 0·수수료만), 인앱구독 **RevenueCat**($2.5k/월까지 무료).
+- 스케일 시 첫 한도: 이메일 발송량·애널리틱스 월 이벤트 수.
 <!-- managed:END -->
